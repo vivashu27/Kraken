@@ -41,7 +41,7 @@ func main() {
 	var wg sync.WaitGroup
 	numThreads := 500
 	for i := 0; i < numThreads; i++ {
-		wg.Add(480)
+		wg.Add(1)
 		go func() {
 			defer wg.Done()
 			syn_send(host, port)
